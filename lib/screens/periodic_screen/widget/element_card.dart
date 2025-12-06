@@ -11,7 +11,7 @@ class ElementCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-        elevation: 8,
+        elevation: 6,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
@@ -31,6 +31,7 @@ class ElementCard extends StatelessWidget {
                   }, icon: Icon(
                   element.isFavourite ? Icons.favorite:  Icons.favorite_border,
               color:element.isFavourite ? Colors.red: Colors.grey ,
+                size: element.isFavourite ? 32: 24,
               ))
               ,
             ],

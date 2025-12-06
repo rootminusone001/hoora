@@ -28,7 +28,7 @@ class _PeriodicTableScreenState extends State<PeriodicTableScreen> with SingleTi
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Services'),
+        title: Text('Services',textAlign: TextAlign.start,),
         bottom: TabBar(
           controller: _tabController,
           tabs: [Tab(text: 'All Services'), Tab(text: 'Favorites')],
