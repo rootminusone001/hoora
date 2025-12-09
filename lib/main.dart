@@ -32,7 +32,6 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-        // home: const MyHomePage(title: 'Flutter Demo Home Page'),
         home:PeriodicTableScreen(),
       ),
     );
