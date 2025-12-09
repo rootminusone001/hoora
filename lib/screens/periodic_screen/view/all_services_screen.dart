@@ -10,9 +10,7 @@ class AllServicesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<PeriodicTableElementBloc, PeriodicTableElementState>(
-      listener: (context, state) {
-      },
+    return BlocBuilder<PeriodicTableElementBloc, PeriodicTableElementState>(
       builder: (context, state) {
         if (state is PeriodicTableElementSuccessState) {
           if (state.elements.isEmpty) {

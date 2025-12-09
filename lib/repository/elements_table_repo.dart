@@ -27,7 +27,6 @@ class ElementsTableRepo {
 
       final favouriteAtomicNumbers = (await SqliteDb.instance.getAllFavorites()).toSet();
 
-
       if (elementsTableMap.isNotEmpty) {
         for (final entry in elementsTableMap.entries) {
           entry.value.isFavourite = favouriteAtomicNumbers.contains(entry.key);
